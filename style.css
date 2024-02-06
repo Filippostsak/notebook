@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: linear-gradient(to right, rgb(105, 105, 215), purple);
+}
+
+#notes-list {
+  min-height: 500px;
+  max-height: 700px;
+  overflow-y: auto;
+}
+
+.completed-note {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+#notes-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.completed-note {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.toggle {
+  background: linear-gradient(to left, rgb(166, 203, 180), rgb(172, 233, 125));
+  color: white;
+}
+
+.complete-note-btn,
+.delete-note-btn {
+  margin: 0 5px;
+}
